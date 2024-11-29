@@ -12,6 +12,7 @@ header {
   align-items: center;
   height: 70px;
   position: sticky;
+  z-index: 7;
   top: 0px;
   border-bottom: 1px solid black;
   padding-left: 18%;
@@ -25,22 +26,62 @@ h1 {
   font-size: 100px;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
+nav > button {
+  margin: 10px;
+  border-radius: 20px;
+  height: 40px;
+}
+nav > button:hover {
+  border-radius: 20px;
+  color: white;
+  border-color: #191919;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#buttonNav {
+  border-radius: 20px;
+  color: white;
+  background-color: #191919;
+  height: 40px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 #hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 450px;
+  height: 480px;
   background-color: #ffc017;
   padding-left: 18%;
   font-size: 25px;
+  border-bottom: 1px solid black;
 }
 
 #hero > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
   width: 80%;
 }
 
-#hero > svg {
-  align-items: end;
+#hero h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+#hero p {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 #buttonHero {
@@ -51,6 +92,28 @@ h1 {
   width: 200px;
   font-size: 18px;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#hero svg {
+  max-width: 40%;
+}
+
+#trending {
+  padding-left: 18%;
+  padding-right: 18%;
+  flex-direction: row;
+  height: 200px;
+}
+
+.trendingArticles {
+  display: flex;
+  flex-direction: column;
 }
 
 #articlesAndTags {
