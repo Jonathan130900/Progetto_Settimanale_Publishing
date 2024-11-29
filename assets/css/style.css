@@ -185,6 +185,7 @@ button:hover {
 
 #articles {
   width: 60%;
+  flex: 3;
 }
 
 .articleContainer {
@@ -273,10 +274,6 @@ button:hover {
   gap: 20px;
   padding-left: 18%;
   padding-right: 18%;
-}
-
-#articles {
-  flex: 3;
 }
 
 #tags {
