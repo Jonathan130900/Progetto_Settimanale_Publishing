@@ -2,3 +2,18 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+
+header {
+  background-color: #ffc017;
+  justify-content: space-evenly;
+}
+
+#articlesAndTags {
+  display: flex;
+  flex-direction: row;
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: row;
+}
