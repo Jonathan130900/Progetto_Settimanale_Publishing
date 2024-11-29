@@ -1,11 +1,56 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #ffc017;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid black;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 100px;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  background-color: #ffc017;
+  padding-left: 18%;
+  font-size: 25px;
+}
+
+#hero > div {
+  width: 80%;
+}
+
+#hero > svg {
+  align-items: end;
+}
+
+#buttonHero {
+  border-radius: 20px;
+  color: white;
+  background-color: #191919;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+  border: none;
 }
 
 #articlesAndTags {
