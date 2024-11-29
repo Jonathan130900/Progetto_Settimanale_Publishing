@@ -107,61 +107,72 @@ button:hover {
 #trending {
   padding-left: 18%;
   padding-right: 18%;
+  flex-wrap: wrap;
 }
 
 .trendingArticles {
-  flex-wrap: wrap;
-  display: inline-flex; /* Enable Flexbox */
-  align-items: flex-start; /* Align items at the top */
-  margin-bottom: 20px; /* Add space between articles */
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
   width: 30%;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .numberArticle {
-  font-size: 24px; /* Style the number */
+  font-size: 36px;
   font-weight: bold;
-  color: gray;
-  flex-shrink: 0; /* Prevent the number from resizing */
+  color: lightgray;
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .authorArticle {
-  display: inline-flex; /* Flexbox for image and name */
-  align-items: center; /* Vertically align image and name */
-  gap: 10px; /* Space between image and name */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .pfpArticle {
-  width: 20px; /* Profile picture size */
+  width: 20px;
   height: 20px;
-  border-radius: 50%; /* Make it circular */
-  object-fit: cover; /* Ensure the image fits well */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .subjectArticle {
-  margin-top: 5px; /* Space below the author */
-  font-size: 18px; /* Style the subject text */
-  color: #555;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
 }
 
 .dateAndReadTimeArticle {
-  display: flex; /* Align date and time horizontally */
-  gap: 10px; /* Space between date and time */
-  margin-top: 5px; /* Space below the subject */
-  font-size: 14px; /* Style the date and read time */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
   color: #777;
 }
 
 .trendingArticles > div {
-  display: flex; /* Stack content vertically in the right column */
+  display: flex;
   flex-direction: column;
-  gap: 10px; /* Space between rows */
-  flex-grow: 1; /* Allow the right section to grow */
+  gap: 10px;
+  flex-grow: 1;
 }
 
 #articlesAndTags {
   display: flex;
   flex-direction: row;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.articleImage {
+  width: 100px;
 }
 
 .articleContainer {
