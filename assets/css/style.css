@@ -266,7 +266,21 @@ button:hover {
   height: 20px;
 }
 
+#articlesAndTags {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+#articles {
+  flex: 3;
+}
+
 #tags {
+  flex: 1;
   position: sticky;
   top: 100px;
 }
@@ -276,9 +290,36 @@ button:hover {
   font-size: 13px;
 }
 
-#tags > div > button {
+#tags > div {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#tags > div > button {
   color: gray;
   border: 1px solid lightgray;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tags > div > button:hover {
+  color: black;
+  border-color: gray;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: inherit;
 }
