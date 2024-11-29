@@ -44,6 +44,13 @@ nav > button:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
 #buttonNav {
   border-radius: 20px;
   color: white;
@@ -108,15 +115,26 @@ button:hover {
   padding-left: 18%;
   padding-right: 18%;
   flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#titleSection {
+  display: flex;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+  gap: 10px;
 }
 
 .trendingArticles {
   display: inline-flex;
   align-items: flex-start;
-  margin-bottom: 20px;
   width: 30%;
-  justify-content: space-evenly;
+  margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .numberArticle {
@@ -157,25 +175,93 @@ button:hover {
   color: #777;
 }
 
-.trendingArticles > div {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex-grow: 1;
-}
-
 #articlesAndTags {
   display: flex;
   flex-direction: row;
   padding-left: 18%;
   padding-right: 18%;
+  flex-wrap: wrap;
 }
 
-.articleImage {
-  width: 100px;
+#articles {
+  width: 60%;
 }
 
 .articleContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.articleSubject {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.articleImage {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.articleImage img {
+  width: 80%;
+  height: auto;
+}
+
+.authorArticle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pfpArticle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.articleTitle {
+  color: gray;
+}
+
+.articleTitle > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+.articleButton {
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+.articleButton:hover {
+  background-color: rgb(145, 145, 148);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dates {
+  display: flex;
+  gap: 10px;
+}
+
+.dateAndIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.bookmark img {
+  width: 20px;
+  height: 20px;
 }
