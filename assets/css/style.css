@@ -265,3 +265,8 @@ button:hover {
   width: 20px;
   height: 20px;
 }
+
+#tags > span {
+  font-weight: 700;
+  font-size: 13px;
+}
