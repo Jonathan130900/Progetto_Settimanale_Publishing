@@ -266,7 +266,19 @@ button:hover {
   height: 20px;
 }
 
+#tags {
+  position: sticky;
+  top: 100px;
+}
+
 #tags > span {
   font-weight: 700;
   font-size: 13px;
+}
+
+#tags > div > button {
+  display: flex;
+  flex-wrap: wrap;
+  color: gray;
+  border: 1px solid lightgray;
 }
