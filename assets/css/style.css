@@ -12,7 +12,7 @@ header {
   align-items: center;
   height: 70px;
   position: sticky;
-  z-index: 7;
+  z-index: 1;
   top: 0px;
   border-bottom: 1px solid black;
   padding-left: 18%;
@@ -107,13 +107,56 @@ button:hover {
 #trending {
   padding-left: 18%;
   padding-right: 18%;
-  flex-direction: row;
-  height: 200px;
 }
 
 .trendingArticles {
-  display: flex;
+  flex-wrap: wrap;
+  display: inline-flex; /* Enable Flexbox */
+  align-items: flex-start; /* Align items at the top */
+  margin-bottom: 20px; /* Add space between articles */
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+.numberArticle {
+  font-size: 24px; /* Style the number */
+  font-weight: bold;
+  color: gray;
+  flex-shrink: 0; /* Prevent the number from resizing */
+}
+
+.authorArticle {
+  display: inline-flex; /* Flexbox for image and name */
+  align-items: center; /* Vertically align image and name */
+  gap: 10px; /* Space between image and name */
+}
+
+.pfpArticle {
+  width: 20px; /* Profile picture size */
+  height: 20px;
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image fits well */
+}
+
+.subjectArticle {
+  margin-top: 5px; /* Space below the author */
+  font-size: 18px; /* Style the subject text */
+  color: #555;
+}
+
+.dateAndReadTimeArticle {
+  display: flex; /* Align date and time horizontally */
+  gap: 10px; /* Space between date and time */
+  margin-top: 5px; /* Space below the subject */
+  font-size: 14px; /* Style the date and read time */
+  color: #777;
+}
+
+.trendingArticles > div {
+  display: flex; /* Stack content vertically in the right column */
   flex-direction: column;
+  gap: 10px; /* Space between rows */
+  flex-grow: 1; /* Allow the right section to grow */
 }
 
 #articlesAndTags {
